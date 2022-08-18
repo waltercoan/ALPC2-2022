@@ -22,3 +22,23 @@ for i in range(10): #indexador Y
 
 for i in range(proxlivre):
     print(uniao[i],end=", ")
+
+
+#b.	a diferença entre X e Y 
+# (todos os elementos de X 
+# que não existam em Y)
+dif = [0] * 10
+proxlivre = 0
+for i in range(10): #i indexa a lista X
+    print(x[i])
+    achei = False
+    for j in range(10): #j indexa a lista Y
+        print("\t", y[j])
+        if x[i] == y[j]:
+            achei = True
+            print("ACHEI")
+            break
+    if not achei:
+        dif[proxlivre] = x[i]
+        proxlivre += 1
+print(dif)
