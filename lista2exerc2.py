@@ -42,3 +42,12 @@ for i in range(10): #i indexa a lista X
         dif[proxlivre] = x[i]
         proxlivre += 1
 print(dif)
+
+#c.	a soma entre X e Y (soma de 
+# cada elemento de X com o 
+# elemento de mesma posição em Y)
+soma = [0] * 10
+for i in range(10):
+    soma[i] = x[i] + y[i]
+
+print(soma)
