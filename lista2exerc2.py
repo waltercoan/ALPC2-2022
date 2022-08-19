@@ -61,3 +61,16 @@ for i in range(10):
     prod[i] = x[i] * y[i]
 
 print(prod)
+
+#e.	a interseção entre X e Y (apenas os
+# elementos que aparecem nos dois vetores)
+inter = [0] * 10
+proxlivre = 0
+for i in range(10):
+    print("X-> ", x[i])
+    for j in range(10):
+        print("\tY-> ", y[j])
+        if x[i] == y[j]:
+            inter[proxlivre] = x[i]
+            proxlivre += 1
+print(inter)
