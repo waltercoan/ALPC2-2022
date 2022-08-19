@@ -51,3 +51,4 @@ for i in range(10):
     soma[i] = x[i] + y[i]
 
 print(soma)
+
