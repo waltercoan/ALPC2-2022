@@ -52,3 +52,12 @@ for i in range(10):
 
 print(soma)
 
+#d.	produto entre X e Y (multiplicação de 
+# cada elemento de X com o elemento 
+# de mesma posição em Y)
+
+prod = [0] * 10
+for i in range(10):
+    prod[i] = x[i] * y[i]
+
+print(prod)
