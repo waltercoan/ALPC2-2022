@@ -6,7 +6,8 @@ while(opcao !=4):
     print("2. Efetuar saque")
     print("3. Consultar ativos")
     print("4. Finalizar")
-    print("Digite o número da opção desejada")
+    print("Digite o número da opção desejada\n")
+    print()
     opcao = int(input())
     if opcao == 1:
         print("Deposito")
