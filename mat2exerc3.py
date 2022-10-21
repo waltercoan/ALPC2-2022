@@ -17,3 +17,8 @@ for lin in range(4):
         print("Produto: ", col+1)
         print("Digite a quantidade")
         matriz[lin][col] = int(input())
+
+for col in range(3):
+    print("Produto: ", col+1)
+    print("Digite o custo")
+    matriz[4][col] = float(input())
