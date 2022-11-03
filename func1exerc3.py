@@ -17,6 +17,21 @@ def calcmedia(n1:float, n2:float, n3:float, tipo:str):
         media = ((n1 * 5) + (n2 * 3) + (n3 * 2)) / 10
     return media
 
+
+def calcmedia2(listaNum:list, tipo:str):
+    media = 0
+    if tipo == "A" or tipo == "a":
+        soma = 0
+        for i in listaNum:
+            soma += i
+        media = soma / 3
+    else: 
+        soma = (listaNum[0] * 5) + \
+                (listaNum[1] * 3) + \
+                 (listaNum[2] * 2)
+        media = soma / 10
+    return media
+
 print("Digite a primeira nota")
 nota1 = float(input())
 print("Digite a segunda nota")
