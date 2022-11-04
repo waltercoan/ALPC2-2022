@@ -47,8 +47,41 @@ def media1():
             conta += 1
     media = soma / conta
     return media
+#Faça uma função que determine e devolva ao
+#  programa principal a maior idade entre
+#  os habitantes.
+def maioridade():
+    global idade
+    omaior = idade[0]
+    for i in range(5):
+        if idade[i] > omaior:
+            omaior = idade[i]
+    return omaior
 
+#c.	Faça uma função que determine e devolva ao 
+# programa principal a quantidade de indivíduos 
+# do sexo feminino cuja idade está 
+# entre 18 e 35 (inclusive) e que tenham 
+# olhos azuis e cabelos louros.
+def contapessoas():
+    global sexo
+    global idade
+    global corolho
+    global corcabelo
+    contador = 0
+    for i in range(5):
+        if (sexo[i] == "f" or sexo[i] == "F") and \
+            (idade[i] > 18 and idade[i] <= 35) and \
+            (corolho[i] == 'a' or corolho[i] == 'A') and \
+            (corcabelo[i] == 'l' or corcabelo[i] == 'L'):
+            contador += 1
+    return contador
 if __name__ == "__main__":
     lerdados()
     guardarmedia =  media1()
     print(f'A media e {guardarmedia}')
+    #print('A media e', guardarmedia)
+    guardaromaior = maioridade()
+    print(f"A maior idade e {guardaromaior}")
+    guardacontagem = contapessoas()
+    print(f"A quantidade e {guardacontagem}")
