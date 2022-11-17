@@ -1,6 +1,7 @@
 #from random import random
 #print(dir(random))
 def fazqqcoisa():
+    print(__name__)
     print("Rodando...")
 
 if __name__ == "__main__":

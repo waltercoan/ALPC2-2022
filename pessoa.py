@@ -21,8 +21,8 @@ if __name__ == "__main__":
     #zezinho.nome = "zezinho"
     #zezinho.idade = 12
     zezinho + 100
-    print(zezinho.idade)
-    zezinho.podeDirigir()
+    #print(zezinho.idade)
+    #zezinho.podeDirigir()
     print(zezinho)
 
 
